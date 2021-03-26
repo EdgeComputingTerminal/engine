@@ -1,4 +1,4 @@
-module github.com/EdgeComputingTerminal/engine
+module github.com/Monibuca/engine/v2
 
 go 1.16
 
