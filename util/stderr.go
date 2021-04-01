@@ -9,7 +9,7 @@ import (
 )
 
 func init() {
-	_, err := os.OpenFile("./fatal.log", os.O_CREATE|os.O_TRUNC|os.O_RDWR, 0666)
+	logFile, err := os.OpenFile("./fatal.log", os.O_CREATE|os.O_TRUNC|os.O_RDWR, 0666)
 	if err != nil {
 		log.Println("服务启动出错", "打开异常日志文件失败", err)
 		return
